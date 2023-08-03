@@ -33,5 +33,5 @@ function rta() {
         mensaje4 = 'Ooh!! This is not the displayed function.';
     }
 
-    para.textContent = 'Question 1: ${mensaje1}\n Question 2: ${mensaje2}\n Question 3: ${mensaje3}\n Question 4: ${mensaje4}';
+    para.textContent('Question 1:' + mensaje1 + '<br>Question 2:' + mensaje2 + '<br>Question 3:' + mensaje3 + 'Question 4:' + mensaje4);
 }
