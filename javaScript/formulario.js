@@ -7,39 +7,39 @@ const para = document.querySelector('.p4');
 let intentosCount = 1;
 
 function rta() {
-    let mensaje;
+    
     if(intentosCount ==1){
     
         if (document.getElementById('#senoidal1').checked){
-            mensaje = 'Correct!';
-            document.getElementById('.p1').innerHTML = mensaje;
+            const mensaje1 = document.getElementById(".p1");
+            mensaje1.innerHTML = 'Correct!';
         } else {
-            mensaje = 'Ooh!! This is not the displayed function.';
-            document.getElementById('.p1').innerHTML = mensaje;
+            const mensaje1 = document.getElementById(".p1");
+            mensaje1.innerHTML = 'Ooh!! This is not the displayed function.';
         }
         
         if (document.getElementById('#creciente2').checked){
-            mensaje = 'Correct!';
-            document.getElementById('.p2').innerHTML = mensaje;
+            const mensaje2 = document.getElementById(".p2");
+            mensaje2.innerHTML = 'Correct!';
         } else {
-            mensaje = 'Ooh!! This is not the displayed function.';
-            document.getElementById('.p2').innerHTML = mensaje;
+            const mensaje2 = document.getElementById(".p2");
+            mensaje2.innerHTML = 'Ooh!! This is not the displayed function.';
         }
         
         if (document.getElementById('#cuadrada3').checked){
-            mensaje = 'Correct!';
-            document.getElementById('.p3').innerHTML = mensaje;
+            const mensaje3 = document.getElementById(".p3");
+            mensaje3.innerHTML = 'Correct!';
         } else {
-            mensaje = 'Ooh!! This is not the displayed function.';
-            document.getElementById('.p3').innerHTML = mensaje;
+            const mensaje3 = document.getElementById(".p3");
+            mensaje3.innerHTML = 'Ooh!! This is not the displayed function.';
         }
         
         if (document.getElementById('#decreciente4').checked){
-            mensaje = 'Correct!';
-            document.getElementById('.p4').innerHTML = mensaje;
+            const mensaje4 = document.getElementById(".p4");
+            mensaje4.innerHTML = 'Correct!';
         } else {
-            mensaje = 'Ooh!! This is not the displayed function.';
-            document.getElementById('.p4').innerHTML = mensaje;
+            const mensaje4 = document.getElementById(".p4");
+            mensaje4.innerHTML = 'Ooh!! This is not the displayed function.';
         }
 
         intentosCount -=intentosCount;
