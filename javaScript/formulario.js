@@ -8,38 +8,43 @@ let intentosCount = 1;
 
 function rta() {
     let mensaje;
+    if(intentosCount ==1){
     
-    if (document.getElementById('#senoidal1').checked){
-        mensaje = 'Correct!';
-        document.getElementById('.p1').innerHTML = mensaje;
-    } else {
-        mensaje = 'Ooh!! This is not the displayed function.';
-        document.getElementById('.p1').innerHTML = mensaje;
-    }
-    
-    if (document.getElementById('#creciente2').checked){
-        mensaje = 'Correct!';
-        document.getElementById('.p2').innerHTML = mensaje;
-    } else {
-        mensaje = 'Ooh!! This is not the displayed function.';
-        document.getElementById('.p2').innerHTML = mensaje;
-    }
-    
-    if (document.getElementById('#cuadrada3').checked){
-        mensaje = 'Correct!';
-        document.getElementById('.p3').innerHTML = mensaje;
-    } else {
-        mensaje = 'Ooh!! This is not the displayed function.';
-        document.getElementById('.p3').innerHTML = mensaje;
-    }
-    
-    if (document.getElementById('#decreciente4').checked){
-        mensaje = 'Correct!';
-        document.getElementById('.p4').innerHTML = mensaje;
-    } else {
-        mensaje = 'Ooh!! This is not the displayed function.';
-        document.getElementById('.p4').innerHTML = mensaje;
-    }
+        if (document.getElementById('#senoidal1').checked){
+            mensaje = 'Correct!';
+            document.getElementById('.p1').innerHTML = mensaje;
+        } else {
+            mensaje = 'Ooh!! This is not the displayed function.';
+            document.getElementById('.p1').innerHTML = mensaje;
+        }
+        
+        if (document.getElementById('#creciente2').checked){
+            mensaje = 'Correct!';
+            document.getElementById('.p2').innerHTML = mensaje;
+        } else {
+            mensaje = 'Ooh!! This is not the displayed function.';
+            document.getElementById('.p2').innerHTML = mensaje;
+        }
+        
+        if (document.getElementById('#cuadrada3').checked){
+            mensaje = 'Correct!';
+            document.getElementById('.p3').innerHTML = mensaje;
+        } else {
+            mensaje = 'Ooh!! This is not the displayed function.';
+            document.getElementById('.p3').innerHTML = mensaje;
+        }
+        
+        if (document.getElementById('#decreciente4').checked){
+            mensaje = 'Correct!';
+            document.getElementById('.p4').innerHTML = mensaje;
+        } else {
+            mensaje = 'Ooh!! This is not the displayed function.';
+            document.getElementById('.p4').innerHTML = mensaje;
+        }
+
+        intentosCount -=intentosCount;
+    } 
+    else alert('No Attempts');
 }
 
 /*let countAttempts = 1;
