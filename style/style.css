@@ -60,6 +60,16 @@ footer{
     margin-bottom: 0;
 }
 
+.warning
+{
+    color:red;
+}
+
+.succes
+{
+    color: green;
+}
+
 /*pantallas de 500px*/
 @media (min-width:500px){
     .envoltura{
