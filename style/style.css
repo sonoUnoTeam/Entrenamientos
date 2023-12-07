@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;600&family=Quicksand&display=swap');
+/*Empezando para pantallas de 320px*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+}
+.envoltura{
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header{
+    grid-area: header;
+    font-size: large;
+    background-color: rgba(4, 86, 158, 0.829);
+    padding: auto;
+}
+img{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+main{
+    grid-area: main;
+    text-align: justify;
+}
+.titulo{
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(4, 86, 158, 0.829);
+    margin-top: 1em;
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+.warning
+{
+    color:red;
+}
+
+.succes
+{
+    color: green;
+}
+
+/*pantallas de 500px*/
+@media (min-width:500px){
+    .envoltura{
+        margin: 0px;
+    }
+    header{
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-areas: 
+        "logoh barra";
+        margin-bottom: 1em;
+    }
+    .logoh{
+        grid-area: logoh;
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1em;
+    }
+    img{
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        width: 4.5em;
+    }
+    .barra ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 2.3em 0em 2.3em 0em;
+        font-family: 'Poppins',sans-serif;
+    }
+    /*.contacto{
+        margin: 2em 0.5em 2em 0.5em;
+        width: fit-content;
+    }
+    .logosf{
+        margin-inline: 1.5em;
+        width: fit-content;
+    }*/
+}
+
+/*pantallas de 768px*/
+/*@media (min-width: 768px){
+    .contacto{
+        margin: 2em 30em 2em 1.5em;
+    }
+}*/
+
+/*pantallas de 1024px*/
+@media (min-width: 1024px){
+    .barra ul{
+        justify-content: space-evenly;
+        margin: 2.3em 0em 2.3em 20em;
+    }
+}
